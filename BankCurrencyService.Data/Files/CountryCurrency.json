@@ -1,0 +1,887 @@
+[
+ {
+  "Key": 1,
+  "CountryName": "Australia Dollar",
+  "AcronymAbb": "AUD"
+ },
+ {
+  "Key": 2,
+  "CountryName": "Great Britain Pound",
+  "AcronymAbb": "GBP"
+ },
+ {
+  "Key": 3,
+  "CountryName": "Euro",
+  "AcronymAbb": "EUR"
+ },
+ {
+  "Key": 4,
+  "CountryName": "Japan Yen",
+  "AcronymAbb": "JPY"
+ },
+ {
+  "Key": 5,
+  "CountryName": "Switzerland Franc",
+  "AcronymAbb": "CHF"
+ },
+ {
+  "Key": 6,
+  "CountryName": "USA Dollar",
+  "AcronymAbb": "USD"
+ },
+ {
+  "Key": 7,
+  "CountryName": "Afghanistan Afghani",
+  "AcronymAbb": "AFN"
+ },
+ {
+  "Key": 8,
+  "CountryName": "Albania Lek",
+  "AcronymAbb": "ALL"
+ },
+ {
+  "Key": 9,
+  "CountryName": "Algeria Dinar",
+  "AcronymAbb": "DZD"
+ },
+ {
+  "Key": 10,
+  "CountryName": "Angola Kwanza",
+  "AcronymAbb": "AOA"
+ },
+ {
+  "Key": 11,
+  "CountryName": "Argentina Peso",
+  "AcronymAbb": "ARS"
+ },
+ {
+  "Key": 12,
+  "CountryName": "Armenia Dram",
+  "AcronymAbb": "AMD"
+ },
+ {
+  "Key": 13,
+  "CountryName": "Aruba Florin",
+  "AcronymAbb": "AWG"
+ },
+ {
+  "Key": 14,
+  "CountryName": "Australia Dollar",
+  "AcronymAbb": "AUD"
+ },
+ {
+  "Key": 15,
+  "CountryName": "Austria Schilling",
+  "AcronymAbb": "ATS (EURO)"
+ },
+ {
+  "Key": 16,
+  "CountryName": "Belgium Franc",
+  "AcronymAbb": "BEF (EURO)"
+ },
+ {
+  "Key": 17,
+  "CountryName": "Azerbaijan New Manat",
+  "AcronymAbb": "AZN"
+ },
+ {
+  "Key": 18,
+  "CountryName": "Bahamas Dollar",
+  "AcronymAbb": "BSD"
+ },
+ {
+  "Key": 19,
+  "CountryName": "Bahrain Dinar",
+  "AcronymAbb": "BHD"
+ },
+ {
+  "Key": 20,
+  "CountryName": "Bangladesh Taka",
+  "AcronymAbb": "BDT"
+ },
+ {
+  "Key": 21,
+  "CountryName": "Barbados Dollar",
+  "AcronymAbb": "BBD"
+ },
+ {
+  "Key": 22,
+  "CountryName": "Belarus Ruble",
+  "AcronymAbb": "BYR"
+ },
+ {
+  "Key": 23,
+  "CountryName": "Belize Dollar",
+  "AcronymAbb": "BZD"
+ },
+ {
+  "Key": 24,
+  "CountryName": "Bermuda Dollar",
+  "AcronymAbb": "BMD"
+ },
+ {
+  "Key": 25,
+  "CountryName": "Bhutan Ngultrum",
+  "AcronymAbb": "BTN"
+ },
+ {
+  "Key": 26,
+  "CountryName": "Bolivia Boliviano",
+  "AcronymAbb": "BOB"
+ },
+ {
+  "Key": 27,
+  "CountryName": "Bosnia Mark",
+  "AcronymAbb": "BAM"
+ },
+ {
+  "Key": 28,
+  "CountryName": "Botswana Pula",
+  "AcronymAbb": "BWP"
+ },
+ {
+  "Key": 29,
+  "CountryName": "Brazil Real",
+  "AcronymAbb": "BRL"
+ },
+ {
+  "Key": 30,
+  "CountryName": "Great Britain Pound",
+  "AcronymAbb": "GBP"
+ },
+ {
+  "Key": 31,
+  "CountryName": "Brunei Dollar",
+  "AcronymAbb": "BND"
+ },
+ {
+  "Key": 32,
+  "CountryName": "Bulgaria Lev",
+  "AcronymAbb": "BGN"
+ },
+ {
+  "Key": 33,
+  "CountryName": "Burundi Franc",
+  "AcronymAbb": "BIF"
+ },
+ {
+  "Key": 34,
+  "CountryName": "CFA Franc BCEAO",
+  "AcronymAbb": "XOF"
+ },
+ {
+  "Key": 35,
+  "CountryName": "CFA Franc BEAC",
+  "AcronymAbb": "XAF"
+ },
+ {
+  "Key": 36,
+  "CountryName": "CFP Franc",
+  "AcronymAbb": "XPF"
+ },
+ {
+  "Key": 37,
+  "CountryName": "Cambodia Riel",
+  "AcronymAbb": "KHR"
+ },
+ {
+  "Key": 38,
+  "CountryName": "Canada Dollar",
+  "AcronymAbb": "CAD"
+ },
+ {
+  "Key": 39,
+  "CountryName": "Cape Verde Escudo",
+  "AcronymAbb": "CVE"
+ },
+ {
+  "Key": 40,
+  "CountryName": "Cayman Islands Dollar",
+  "AcronymAbb": "KYD"
+ },
+ {
+  "Key": 41,
+  "CountryName": "Chili Peso",
+  "AcronymAbb": "CLP"
+ },
+ {
+  "Key": 42,
+  "CountryName": "China Yuan\/Renminbi",
+  "AcronymAbb": "CNY"
+ },
+ {
+  "Key": 43,
+  "CountryName": "Colombia Peso",
+  "AcronymAbb": "COP"
+ },
+ {
+  "Key": 44,
+  "CountryName": "Comoros Franc",
+  "AcronymAbb": "KMF"
+ },
+ {
+  "Key": 45,
+  "CountryName": "Congo Franc",
+  "AcronymAbb": "CDF"
+ },
+ {
+  "Key": 46,
+  "CountryName": "Costa Rica Colon",
+  "AcronymAbb": "CRC"
+ },
+ {
+  "Key": 47,
+  "CountryName": "Croatia Kuna",
+  "AcronymAbb": "HRK"
+ },
+ {
+  "Key": 48,
+  "CountryName": "Cuba Convertible Peso",
+  "AcronymAbb": "CUC"
+ },
+ {
+  "Key": 49,
+  "CountryName": "Cuba Peso",
+  "AcronymAbb": "CUP"
+ },
+ {
+  "Key": 50,
+  "CountryName": "Cyprus Pound",
+  "AcronymAbb": "CYP (EURO)"
+ },
+ {
+  "Key": 51,
+  "CountryName": "Czech Koruna",
+  "AcronymAbb": "CZK"
+ },
+ {
+  "Key": 52,
+  "CountryName": "Denmark Krone",
+  "AcronymAbb": "DKK"
+ },
+ {
+  "Key": 53,
+  "CountryName": "Djibouti Franc",
+  "AcronymAbb": "DJF"
+ },
+ {
+  "Key": 54,
+  "CountryName": "Dominican Republich Peso",
+  "AcronymAbb": "DOP"
+ },
+ {
+  "Key": 55,
+  "CountryName": "East Caribbean Dollar",
+  "AcronymAbb": "XCD"
+ },
+ {
+  "Key": 56,
+  "CountryName": "Egypt Pound",
+  "AcronymAbb": "EGP"
+ },
+ {
+  "Key": 57,
+  "CountryName": "El Salvador Colon",
+  "AcronymAbb": "SVC"
+ },
+ {
+  "Key": 58,
+  "CountryName": "Estonia Kroon",
+  "AcronymAbb": "EEK (EURO)"
+ },
+ {
+  "Key": 59,
+  "CountryName": "Ethiopia Birr",
+  "AcronymAbb": "ETB"
+ },
+ {
+  "Key": 60,
+  "CountryName": "Euro",
+  "AcronymAbb": "EUR"
+ },
+ {
+  "Key": 61,
+  "CountryName": "Falkland Islands Pound",
+  "AcronymAbb": "FKP"
+ },
+ {
+  "Key": 62,
+  "CountryName": "Finland Markka",
+  "AcronymAbb": "FIM (EURO)"
+ },
+ {
+  "Key": 63,
+  "CountryName": "Fiji Dollar",
+  "AcronymAbb": "FJD"
+ },
+ {
+  "Key": 64,
+  "CountryName": "Gambia Dalasi",
+  "AcronymAbb": "GMD"
+ },
+ {
+  "Key": 65,
+  "CountryName": "Georgia Lari",
+  "AcronymAbb": "GEL"
+ },
+ {
+  "Key": 66,
+  "CountryName": "Germany Mark",
+  "AcronymAbb": "DMK (EURO)"
+ },
+ {
+  "Key": 67,
+  "CountryName": "Ghana New Cedi",
+  "AcronymAbb": "GHS"
+ },
+ {
+  "Key": 68,
+  "CountryName": "Gibraltar Pound",
+  "AcronymAbb": "GIP"
+ },
+ {
+  "Key": 69,
+  "CountryName": "Greece Drachma",
+  "AcronymAbb": "GRD (EURO)"
+ },
+ {
+  "Key": 70,
+  "CountryName": "Guatemala Quetzal",
+  "AcronymAbb": "GTQ"
+ },
+ {
+  "Key": 71,
+  "CountryName": "Guinea Franc",
+  "AcronymAbb": "GNF"
+ },
+ {
+  "Key": 72,
+  "CountryName": "Guyana Dollar",
+  "AcronymAbb": "GYD"
+ },
+ {
+  "Key": 73,
+  "CountryName": "Haiti Gourde",
+  "AcronymAbb": "HTG"
+ },
+ {
+  "Key": 74,
+  "CountryName": "Honduras Lempira",
+  "AcronymAbb": "HNL"
+ },
+ {
+  "Key": 75,
+  "CountryName": "Hong Kong Dollar",
+  "AcronymAbb": "HKD"
+ },
+ {
+  "Key": 76,
+  "CountryName": "Hungary Forint",
+  "AcronymAbb": "HUF"
+ },
+ {
+  "Key": 77,
+  "CountryName": "Iceland Krona",
+  "AcronymAbb": "ISK"
+ },
+ {
+  "Key": 78,
+  "CountryName": "India Rupee",
+  "AcronymAbb": "INR"
+ },
+ {
+  "Key": 79,
+  "CountryName": "Indonesia Rupiah",
+  "AcronymAbb": "IDR"
+ },
+ {
+  "Key": 80,
+  "CountryName": "Iran Rial",
+  "AcronymAbb": "IRR"
+ },
+ {
+  "Key": 81,
+  "CountryName": "Iraq Dinar",
+  "AcronymAbb": "IQD"
+ },
+ {
+  "Key": 82,
+  "CountryName": "Ireland Pound",
+  "AcronymAbb": "IED (EURO)"
+ },
+ {
+  "Key": 83,
+  "CountryName": "Israel New Shekel",
+  "AcronymAbb": "ILS"
+ },
+ {
+  "Key": 84,
+  "CountryName": "Italy Lira",
+  "AcronymAbb": "ITL (EURO)"
+ },
+ {
+  "Key": 85,
+  "CountryName": "Jamaica Dollar",
+  "AcronymAbb": "JMD"
+ },
+ {
+  "Key": 86,
+  "CountryName": "Japan Yen",
+  "AcronymAbb": "JPY"
+ },
+ {
+  "Key": 87,
+  "CountryName": "Jordan Dinar",
+  "AcronymAbb": "JOD"
+ },
+ {
+  "Key": 88,
+  "CountryName": "Kazakhstan Tenge",
+  "AcronymAbb": "KZT"
+ },
+ {
+  "Key": 89,
+  "CountryName": "Kenya Shilling",
+  "AcronymAbb": "KES"
+ },
+ {
+  "Key": 90,
+  "CountryName": "Kuwait Dinar",
+  "AcronymAbb": "KWD"
+ },
+ {
+  "Key": 91,
+  "CountryName": "Kyrgyzstan Som",
+  "AcronymAbb": "KGS"
+ },
+ {
+  "Key": 92,
+  "CountryName": "Laos Kip",
+  "AcronymAbb": "LAK"
+ },
+ {
+  "Key": 93,
+  "CountryName": "Latvia Lats",
+  "AcronymAbb": "LVL (EURO)"
+ },
+ {
+  "Key": 94,
+  "CountryName": "Lebanon Pound",
+  "AcronymAbb": "LBP"
+ },
+ {
+  "Key": 95,
+  "CountryName": "Lesotho Loti",
+  "AcronymAbb": "LSL"
+ },
+ {
+  "Key": 96,
+  "CountryName": "Liberia Dollar",
+  "AcronymAbb": "LRD"
+ },
+ {
+  "Key": 97,
+  "CountryName": "Libya Dinar",
+  "AcronymAbb": "LYD"
+ },
+ {
+  "Key": 98,
+  "CountryName": "Lithuania Litas",
+  "AcronymAbb": "LTL (EURO)"
+ },
+ {
+  "Key": 99,
+  "CountryName": "Luxembourg Franc",
+  "AcronymAbb": "LUF (EURO)"
+ },
+ {
+  "Key": 100,
+  "CountryName": "Macau Pataca",
+  "AcronymAbb": "MOP"
+ },
+ {
+  "Key": 101,
+  "CountryName": "Macedonia Denar",
+  "AcronymAbb": "MKD"
+ },
+ {
+  "Key": 102,
+  "CountryName": "Malagasy Ariary",
+  "AcronymAbb": "MGA"
+ },
+ {
+  "Key": 103,
+  "CountryName": "Malawi Kwacha",
+  "AcronymAbb": "MWK"
+ },
+ {
+  "Key": 104,
+  "CountryName": "Malaysia Ringgit",
+  "AcronymAbb": "MYR"
+ },
+ {
+  "Key": 105,
+  "CountryName": "Maldives Rufiyaa",
+  "AcronymAbb": "MVR"
+ },
+ {
+  "Key": 106,
+  "CountryName": "Malta Lira",
+  "AcronymAbb": "MTL (EURO)"
+ },
+ {
+  "Key": 107,
+  "CountryName": "Mauritania Ouguiya",
+  "AcronymAbb": "MRO"
+ },
+ {
+  "Key": 108,
+  "CountryName": "Mauritius Rupee",
+  "AcronymAbb": "MUR"
+ },
+ {
+  "Key": 109,
+  "CountryName": "Mexico Peso",
+  "AcronymAbb": "MXN"
+ },
+ {
+  "Key": 110,
+  "CountryName": "Moldova Leu",
+  "AcronymAbb": "MDL"
+ },
+ {
+  "Key": 111,
+  "CountryName": "Mongolia Tugrik",
+  "AcronymAbb": "MNT"
+ },
+ {
+  "Key": 112,
+  "CountryName": "Morocco Dirham",
+  "AcronymAbb": "MAD"
+ },
+ {
+  "Key": 113,
+  "CountryName": "Mozambique New Metical",
+  "AcronymAbb": "MZN"
+ },
+ {
+  "Key": 114,
+  "CountryName": "Myanmar Kyat",
+  "AcronymAbb": "MMK"
+ },
+ {
+  "Key": 115,
+  "CountryName": "NL Antilles Guilder",
+  "AcronymAbb": "ANG"
+ },
+ {
+  "Key": 116,
+  "CountryName": "Namibia Dollar",
+  "AcronymAbb": "NAD"
+ },
+ {
+  "Key": 117,
+  "CountryName": "Nepal Rupee",
+  "AcronymAbb": "NPR"
+ },
+ {
+  "Key": 118,
+  "CountryName": "Netherlands Guilder",
+  "AcronymAbb": "NLG (EURO)"
+ },
+ {
+  "Key": 119,
+  "CountryName": "New Zealand Dollar",
+  "AcronymAbb": "NZD"
+ },
+ {
+  "Key": 120,
+  "CountryName": "Nicaragua Cordoba Oro",
+  "AcronymAbb": "NIO"
+ },
+ {
+  "Key": 121,
+  "CountryName": "Nigeria Naira",
+  "AcronymAbb": "NGN"
+ },
+ {
+  "Key": 122,
+  "CountryName": "North Korea Won",
+  "AcronymAbb": "KPW"
+ },
+ {
+  "Key": 123,
+  "CountryName": "Norway Kroner",
+  "AcronymAbb": "NOK"
+ },
+ {
+  "Key": 124,
+  "CountryName": "Oman Rial",
+  "AcronymAbb": "OMR"
+ },
+ {
+  "Key": 125,
+  "CountryName": "Pakistan Rupee",
+  "AcronymAbb": "PKR"
+ },
+ {
+  "Key": 126,
+  "CountryName": "Panama Balboa",
+  "AcronymAbb": "PAB"
+ },
+ {
+  "Key": 127,
+  "CountryName": "Papua New Guinea Kina",
+  "AcronymAbb": "PGK"
+ },
+ {
+  "Key": 128,
+  "CountryName": "Paraguay Guarani",
+  "AcronymAbb": "PYG"
+ },
+ {
+  "Key": 129,
+  "CountryName": "Peru Nuevo Sol",
+  "AcronymAbb": "PEN"
+ },
+ {
+  "Key": 130,
+  "CountryName": "Philippines Peso",
+  "AcronymAbb": "PHP"
+ },
+ {
+  "Key": 131,
+  "CountryName": "Poland Zloty",
+  "AcronymAbb": "PLN"
+ },
+ {
+  "Key": 132,
+  "CountryName": "Portugal Escudo",
+  "AcronymAbb": "PTE (EURO)"
+ },
+ {
+  "Key": 133,
+  "CountryName": "Qatar Rial",
+  "AcronymAbb": "QAR"
+ },
+ {
+  "Key": 134,
+  "CountryName": "Romania New Lei",
+  "AcronymAbb": "RON"
+ },
+ {
+  "Key": 135,
+  "CountryName": "Russia Rouble",
+  "AcronymAbb": "RUB"
+ },
+ {
+  "Key": 136,
+  "CountryName": "Rwanda Franc",
+  "AcronymAbb": "RWF"
+ },
+ {
+  "Key": 137,
+  "CountryName": "Samoa Tala",
+  "AcronymAbb": "WST"
+ },
+ {
+  "Key": 138,
+  "CountryName": "Sao Tome\/Principe Dobra",
+  "AcronymAbb": "STD"
+ },
+ {
+  "Key": 139,
+  "CountryName": "Saudi Arabia Riyal",
+  "AcronymAbb": "SAR"
+ },
+ {
+  "Key": 140,
+  "CountryName": "Serbia Dinar",
+  "AcronymAbb": "RSD"
+ },
+ {
+  "Key": 141,
+  "CountryName": "Seychelles Rupee",
+  "AcronymAbb": "SCR"
+ },
+ {
+  "Key": 142,
+  "CountryName": "Sierra Leone Leone",
+  "AcronymAbb": "SLL"
+ },
+ {
+  "Key": 143,
+  "CountryName": "Singapore Dollar",
+  "AcronymAbb": "SGD"
+ },
+ {
+  "Key": 144,
+  "CountryName": "Slovakia Koruna",
+  "AcronymAbb": "SKK (EURO)"
+ },
+ {
+  "Key": 145,
+  "CountryName": "Slovenia Tolar",
+  "AcronymAbb": "SIT (EURO)"
+ },
+ {
+  "Key": 146,
+  "CountryName": "Solomon Islands Dollar",
+  "AcronymAbb": "SBD"
+ },
+ {
+  "Key": 147,
+  "CountryName": "Somali Shilling",
+  "AcronymAbb": "SOS"
+ },
+ {
+  "Key": 148,
+  "CountryName": "South Africa Rand",
+  "AcronymAbb": "ZAR"
+ },
+ {
+  "Key": 149,
+  "CountryName": "South Korea Won",
+  "AcronymAbb": "KRW"
+ },
+ {
+  "Key": 150,
+  "CountryName": "Spain Peseta",
+  "AcronymAbb": "ESP (EURO)"
+ },
+ {
+  "Key": 151,
+  "CountryName": "Sri Lanka Rupee",
+  "AcronymAbb": "LKR"
+ },
+ {
+  "Key": 152,
+  "CountryName": "St Helena Pound",
+  "AcronymAbb": "SHP"
+ },
+ {
+  "Key": 153,
+  "CountryName": "Sudan Pound",
+  "AcronymAbb": "SDG"
+ },
+ {
+  "Key": 154,
+  "CountryName": "Suriname Dollar",
+  "AcronymAbb": "SRD"
+ },
+ {
+  "Key": 155,
+  "CountryName": "Swaziland Lilangeni",
+  "AcronymAbb": "SZL"
+ },
+ {
+  "Key": 156,
+  "CountryName": "Sweden Krona",
+  "AcronymAbb": "SEK"
+ },
+ {
+  "Key": 157,
+  "CountryName": "Switzerland Franc",
+  "AcronymAbb": "CHF"
+ },
+ {
+  "Key": 158,
+  "CountryName": "Syria Pound",
+  "AcronymAbb": "SYP"
+ },
+ {
+  "Key": 159,
+  "CountryName": "Taiwan Dollar",
+  "AcronymAbb": "TWD"
+ },
+ {
+  "Key": 160,
+  "CountryName": "Tanzania Shilling",
+  "AcronymAbb": "TZS"
+ },
+ {
+  "Key": 161,
+  "CountryName": "Thailand Baht",
+  "AcronymAbb": "THB"
+ },
+ {
+  "Key": 162,
+  "CountryName": "Tonga Pa'anga",
+  "AcronymAbb": "TOP"
+ },
+ {
+  "Key": 163,
+  "CountryName": "Trinidad\/Tobago Dollar",
+  "AcronymAbb": "TTD"
+ },
+ {
+  "Key": 164,
+  "CountryName": "Tunisia Dinar",
+  "AcronymAbb": "TND"
+ },
+ {
+  "Key": 165,
+  "CountryName": "Turkish New Lira",
+  "AcronymAbb": "TRY"
+ },
+ {
+  "Key": 166,
+  "CountryName": "Turkmenistan Manat",
+  "AcronymAbb": "TMM"
+ },
+ {
+  "Key": 167,
+  "CountryName": "USA Dollar",
+  "AcronymAbb": "USD"
+ },
+ {
+  "Key": 168,
+  "CountryName": "Uganda Shilling",
+  "AcronymAbb": "UGX"
+ },
+ {
+  "Key": 169,
+  "CountryName": "Ukraine Hryvnia",
+  "AcronymAbb": "UAH"
+ },
+ {
+  "Key": 170,
+  "CountryName": "Uruguay Peso",
+  "AcronymAbb": "UYU"
+ },
+ {
+  "Key": 171,
+  "CountryName": "United Arab Emirates Dirham",
+  "AcronymAbb": "AED"
+ },
+ {
+  "Key": 172,
+  "CountryName": "Vanuatu Vatu",
+  "AcronymAbb": "VUV"
+ },
+ {
+  "Key": 173,
+  "CountryName": "Venezuela Bolivar",
+  "AcronymAbb": "VEB"
+ },
+ {
+  "Key": 174,
+  "CountryName": "Vietnam Dong",
+  "AcronymAbb": "VND"
+ },
+ {
+  "Key": 175,
+  "CountryName": "Yemen Rial",
+  "AcronymAbb": "YER"
+ },
+ {
+  "Key": 176,
+  "CountryName": "Zambia Kwacha",
+  "AcronymAbb": "ZMK"
+ },
+ {
+  "Key": 177,
+  "CountryName": "Zimbabwe Dollar",
+  "AcronymAbb": "ZWD"
+ }
+]
