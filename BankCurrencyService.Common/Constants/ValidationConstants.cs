@@ -8,6 +8,7 @@
         public const int UserName = 100;
         public const int CountryName = 32;
         public const int AcronymAbb = 16;
+        public const int Currency = 16;
         public const string EcbUri = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml?4610f020d7463a0cd43d6828905faf2f";
     }
 }
