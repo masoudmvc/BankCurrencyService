@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BankCurrencyService.Data\BankCurrencyService.Data.csproj" />
+    <ProjectReference Include="..\BankCurrencyService.Service\BankCurrencyService.Service.csproj" />
   </ItemGroup>
 
 </Project>

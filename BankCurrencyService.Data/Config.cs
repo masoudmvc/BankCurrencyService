@@ -1,13 +1,14 @@
-﻿using BankCurrencyService.Data.Helper;
+﻿using BankCurrencyService.Common.Contracts;
+using BankCurrencyService.Data.Helper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BankCurrencyService.Data
 {
-    public class Config
+    public class Config : IConfig
     {
-        public static void Configure(IServiceCollection services, IConfiguration configuration)
+        public void Configure(IServiceCollection services, IConfiguration configuration)
         {
             #region Sqlite
             //public string DbPath { get; }
