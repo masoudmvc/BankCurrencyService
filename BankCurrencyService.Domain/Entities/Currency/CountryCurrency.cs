@@ -1,6 +1,4 @@
-﻿using BankCurrencyService.Domain.Entities.Rate;
-
-namespace BankCurrencyService.Domain.Entities.Currency
+﻿namespace BankCurrencyService.Domain.Entities.Currency
 {
     public class CountryCurrency : EntityBase<int>
     {

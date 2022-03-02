@@ -10,5 +10,6 @@
         public const int AcronymAbb = 16;
         public const int Currency = 16;
         public const string EcbUri = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml?4610f020d7463a0cd43d6828905faf2f";
+        public const string EcbKey = "DB1D8AB3-A521-4F6C-8C94-729CE1EA491D";
     }
 }
