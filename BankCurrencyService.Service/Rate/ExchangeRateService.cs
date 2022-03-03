@@ -66,6 +66,59 @@ namespace BankCurrencyService.Service.Rate
             return result;
         }
 
+        public async Task<SingleQueryResult<ExchangeRateDetailDto>> GetCurrencyRate(string acronym, CancellationToken cancellationToken)
+        {
+            var availableCurrency = await _db.Set<ExchangeRateDetail>()
+                .OrderByDescending(x => x.CreatedDate).FirstOrDefaultAsync(x => x.Currency == acronym, cancellationToken);
+
+            if (availableCurrency == null) throw new Exception($"{acronym} does not exist in available currencies");
+
+            var result = new SingleQueryResult<ExchangeRateDetailDto>
+            {
+                Entity = _essentials.Mapper.Map<ExchangeRateDetailDto>(availableCurrency)
+            };
+
+            return result;
+        }
+
+        public async Task<ConvertDto> ConvertFromBaseRate(ConvertCommand command, CancellationToken cancellationToken)
+        {
+            var sourceCurrencyExchangeRate = (command.FromCurrency == "EUR") ? 1 
+                : (await GetCurrencyRate(command.FromCurrency, cancellationToken)).Entity?.Rate;
+
+            var destCurrencyExchangeRate = (command.ToCurrency == "EUR") ? 1
+                : (await GetCurrencyRate(command.ToCurrency, cancellationToken)).Entity?.Rate;
+
+            if (sourceCurrencyExchangeRate == null) 
+                throw new Exception($"Can't fetch {command.FromCurrency} exchange rate");
+
+            if (destCurrencyExchangeRate == null) 
+                throw new Exception($"Can't fetch {command.ToCurrency} exchange rate");
+
+            return CalculateAndConvert(command, sourceCurrencyExchangeRate.Value, destCurrencyExchangeRate.Value);
+        }
+
+        public async Task<WithdrawDTO> WithdrawMoney(WithdrawCommand command, CancellationToken cancellationToken)
+        {
+            var param = new ConvertCommand
+            {
+                Amount = command.Amount,
+                FromCurrency = command.CurrencyOfTheCountryWhereYouAre,
+                ToCurrency = command.CurrencyOfYourCountry
+            };
+
+            var temp = await ConvertFromBaseRate(param, cancellationToken);
+
+            return new WithdrawDTO
+            {
+                MoneyWithdrawnFromYourAccount = temp.ConvertedAmount,
+                Amount = temp.Amount,
+                ExchangeRate = temp.ExchangeRate,
+                CurrencyOfTheCountryWhereYouAre = command.CurrencyOfTheCountryWhereYouAre,
+                CurrencyOfYourCountry = command.CurrencyOfYourCountry
+            };
+        }
+
         private async Task AddEcbExchangeRates(Envelope? param, CancellationToken cancellationToken)
         {
             if (param?.Cube?.Cube1 != null)
@@ -96,6 +149,25 @@ namespace BankCurrencyService.Service.Rate
                     await _db.SaveChangesAsync(cancellationToken);
                 }
             }
+        }
+
+        private ConvertDto CalculateAndConvert(
+            ConvertCommand command, decimal sourceCurrencyExchangeRate, decimal destCurrencyExchangeRate)
+        {
+            var result = new ConvertDto
+            {
+                Amount = command.Amount,
+                FromCurrency = command.FromCurrency,
+                ToCurrency = command.ToCurrency,
+                ExchangeRate = destCurrencyExchangeRate / sourceCurrencyExchangeRate,
+                ConvertedAmount = (destCurrencyExchangeRate / sourceCurrencyExchangeRate) * command.Amount
+            };
+
+            //result.ExchangeRate
+            //result.ConvertedAmount
+
+            //TODO: should calculate "Commission"
+            return result;
         }
     }
 }

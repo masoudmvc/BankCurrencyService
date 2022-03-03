@@ -51,7 +51,7 @@ namespace BankCurrencyService.Controllers
         [HttpPost("fetch-online-available-rate")]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public async Task<ActionResult<DTO.ServiceOutputBase.EmptyResult>> CreateDialysisSession(CancellationToken cancellationToken)
+        public async Task<ActionResult<DTO.ServiceOutputBase.EmptyResult>> FetchOnlineAvailableRates(CancellationToken cancellationToken)
         {
             await _exchangeRateService.FetchOnlineExchangeRateECB(cancellationToken);
             return Created("", new DTO.ServiceOutputBase.EmptyResult());

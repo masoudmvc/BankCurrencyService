@@ -1,5 +1,6 @@
 using BankCurrencyService.CentralDIConfiguration;
 using BankCurrencyService.Infrastructure.BackgroundProcess;
+using BankCurrencyService.Infrastructure.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<ErrorHandlingMiddleware>();
 
 app.UseAuthorization();
 
