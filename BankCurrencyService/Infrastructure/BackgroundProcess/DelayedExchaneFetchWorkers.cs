@@ -28,7 +28,7 @@ namespace BankCurrencyService.Infrastructure.BackgroundProcess
                         scope.ServiceProvider
                             .GetRequiredService<IExchangeRateService>();
 
-                    await _service.GetOnlineExchangeRateECB(stoppingToken);
+                    await _service.FetchOnlineExchangeRateECB(stoppingToken);
                 }
 
                 await Task.Delay(TimeSpan.FromMinutes(delayTimeByMinute), stoppingToken);

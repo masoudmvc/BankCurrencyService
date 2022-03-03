@@ -25,7 +25,7 @@ namespace BankCurrencyService.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<IEnumerable<WeatherForecast>> Get(CancellationToken cancellationToken)
         {
-            await _rate.GetOnlineExchangeRateECB(cancellationToken);
+            await _rate.FetchOnlineExchangeRateECB(cancellationToken);
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),

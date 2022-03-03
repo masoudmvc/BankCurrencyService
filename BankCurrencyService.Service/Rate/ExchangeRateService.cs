@@ -2,7 +2,10 @@
 using BankCurrencyService.Common.XmlHelper;
 using BankCurrencyService.Data;
 using BankCurrencyService.Domain.Entities.Rate;
+using BankCurrencyService.DTO.Rate;
+using BankCurrencyService.DTO.ServiceOutputBase;
 using BankCurrencyService.Service.Base;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Net;
 
@@ -17,7 +20,7 @@ namespace BankCurrencyService.Service.Rate
             _db = db;
         }
 
-        public async Task GetOnlineExchangeRateECB(CancellationToken cancellationToken)
+        public async Task FetchOnlineExchangeRateECB(CancellationToken cancellationToken)
         {
             try
             {
@@ -44,6 +47,23 @@ namespace BankCurrencyService.Service.Rate
                 _essentials.Logger.LogInformation("Error while getting exchange rates from ECB!");
                 throw;
             }
+        }
+
+        public async Task<SingleQueryResult<ExchangeRateDto>> GetAvailableCurrencies(CancellationToken cancellationToken)
+        {
+            var availableList = await _db.Set<ExchangeRate>()
+                .Include(x => x.ExchangeRateDetails)
+                .Include(x => x.ExchangeRateResource)
+                .OrderByDescending(x => x.CreatedDate).FirstOrDefaultAsync(cancellationToken);
+
+            if (availableList == null) throw new Exception("No exchange rate has been fetched yet!");
+
+            var result = new SingleQueryResult<ExchangeRateDto>
+            {
+                Entity = _essentials.Mapper.Map<ExchangeRateDto>(availableList)
+            };
+
+            return result;
         }
 
         private async Task AddEcbExchangeRates(Envelope? param, CancellationToken cancellationToken)
