@@ -20,7 +20,7 @@ namespace BankCurrencyService.Service.Currency
         public async Task<ListQueryResult<CountryCurrencyDto>> GetAllCurrencies(CancellationToken cancellationToken)
         {
             var list = await _db.Set<CountryCurrency>()
-                .OrderByDescending(x => x.CountryName).ToListAsync(cancellationToken);
+                .OrderBy(x => x.CountryName).ToListAsync(cancellationToken);
 
             if (list == null) throw new Exception("No country currency has been added yet!");
 

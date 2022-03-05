@@ -29,4 +29,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Set allow all origin just for this assignment (it's not secure).
+app.UseCors(x => x
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed(origin => true) // allow any origin
+    .AllowCredentials()); // allow credentials
+
 app.Run();

@@ -83,10 +83,10 @@ namespace BankCurrencyService.Service.Rate
 
         public async Task<ConvertDto> ConvertFromBaseRate(ConvertCommand command, CancellationToken cancellationToken)
         {
-            var sourceCurrencyExchangeRate = (command.FromCurrency == "EUR") ? 1 
+            var sourceCurrencyExchangeRate = (command.FromCurrency == "EUR" || command.FromCurrency == "eur") ? 1 
                 : (await GetCurrencyRate(command.FromCurrency, cancellationToken)).Entity?.Rate;
 
-            var destCurrencyExchangeRate = (command.ToCurrency == "EUR") ? 1
+            var destCurrencyExchangeRate = (command.ToCurrency == "EUR" || command.ToCurrency == "eur") ? 1
                 : (await GetCurrencyRate(command.ToCurrency, cancellationToken)).Entity?.Rate;
 
             if (sourceCurrencyExchangeRate == null) 
